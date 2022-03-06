@@ -10,6 +10,8 @@ class DrawInfo():
     RED = 255,0, 0
     GREY = 128,128,128
 
+    SIDE_PAD = 100
+
     BACKGROUND_COLOR = WHITE
 
     def __init__(self, width, height, lst):
@@ -21,4 +23,9 @@ class DrawInfo():
         self.set_list(lst)
 
     def set_list(self, lst):
-        pass
+        self.lst = lst
+        self.min_val = min(lst)
+        self.max_value = max(lst)
+
+
+        
